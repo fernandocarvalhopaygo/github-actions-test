@@ -2,9 +2,11 @@
 name: Send message on file change test
 
 on: 
-  pull_request:
-    paths:
-    - 'swaggers/**'
+  push:
+    branches: 
+      - test-hello-world
+    paths: 
+      - 'swaggers/**'
 
 jobs:
   hello-world:
@@ -12,4 +14,3 @@ jobs:
     steps:
     - name: Send hello-world
       run: echo "hello-world"
-
