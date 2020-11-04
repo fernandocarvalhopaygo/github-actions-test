@@ -1,0 +1,15 @@
+ 
+name: Send message on file change test
+
+on: 
+  pull_request:
+    paths:
+    - 'swaggers/**'
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Send hello-world
+      run: echo "hello-world"
+
