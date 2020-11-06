@@ -19,7 +19,6 @@ jobs:
     - name: PWD test
       run:  |
         echo "> echo $PWD"
-        echo $PWD
 
         echo "> ls"
         ls
@@ -33,8 +32,8 @@ jobs:
         echo "> echo "teste" > new-folder/teste.md"
         echo "teste" > new-folder/teste.md
 
-        echo "> cat new-foder/teste.md"
-        cat new-foder/teste.md
+        echo "> cat new-folder/teste.md"
+        cat new-folder/teste.md
 
         echo "> mkdir new-folder-02"
         mkdir new-folder-02
@@ -45,11 +44,13 @@ jobs:
         echo "> cp new-folder/teste.md new-folder-02/"
         cp new-folder/teste.md new-folder-02/ 
 
-        echo "> cat new-foder-02/teste.md"
-        cat new-foder-02/teste.md
+        echo "> cat new-folder-02/teste.md"
+        cat new-folder-02/teste.md
 
         echo "> cd new-folder-02"
         cd new-folder-02
+
+        echo "> echo $PWD"
 
         echo "> ls"
         ls
@@ -66,5 +67,5 @@ jobs:
         echo "> cp new-folder/teste.md new-folder-03/"
         cp new-folder/teste.md new-folder-03/ 
 
-        echo "> cat new-foder-03/teste.md"
-        cat new-foder-03/teste.md
+        echo "> cat new-folder-03/teste.md"
+        cat new-folder-03/teste.md
