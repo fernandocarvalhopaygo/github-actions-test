@@ -69,3 +69,6 @@ jobs:
 
         echo "> cat new-folder-03/teste.md"
         cat new-folder-03/teste.md
+
+        echo "> cat $PWD/new-folder-03/teste.md"
+        cat $PWD/new-folder-03/teste.md
