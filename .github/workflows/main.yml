@@ -8,6 +8,7 @@ on:
 
 jobs:
   checkout-test:
+    runs-on: ubuntu-latest
     steps:
     - name: start-test
       run:  echo "start test"
