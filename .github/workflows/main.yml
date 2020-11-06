@@ -4,13 +4,16 @@ name: Send message on file change test
 on: 
   push:
     branches: 
-      - test-hello-world
-    paths: 
-      - 'swaggers/**'
+      - test-checkout
 
 jobs:
-  hello-world:
-    runs-on: ubuntu-latest
+  checkout-test:
     steps:
-    - name: Send hello-world
-      run: echo "hello-world"
+    - name: start-test
+      run:  echo "start test"
+      
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: PWD test
+      run:  echo $PWD
